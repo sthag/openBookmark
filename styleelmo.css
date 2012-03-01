@@ -1,0 +1,144 @@
+/* General Settings */
+* {
+	color: #000;
+}
+body {
+	background-color: #666;
+}
+	#sidebarBody {
+		background-color: #000;
+	}
+		#sidebarBody a,#sidebarBody li {
+			color: #ddd !important;
+		}
+hr {
+	color: #525252;
+	background-color: #525252;
+}
+a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+/* Caption */
+h1#caption {
+	background-color:#444;
+}
+/* Menu and navigation */
+div#menu {
+	background-color: #666;
+}
+h2.nav {
+	background-color: #525252;
+}
+ul.nav {
+	border-color: #525252;
+}
+ul.nav a:hover {
+	color: #E6E6E6;
+	background-color: #B4B4B4;
+}
+/* Folders section */
+div.folders {
+	border-color: #525252;
+}
+div.folders div {
+	margin-bottom: 2px;
+}
+div.folders img {
+	padding-bottom: 1px;
+}
+a.f:link {
+	color: #1E1E1E;
+}
+a.f:visited {
+	color: #1E1E1E;
+}
+a.f:hover {
+	color: #000;
+}
+a.f:active {
+	color: #000;
+}
+.bookmarkcaption a.f, .bookmarkcaption span {
+	color: #000;
+	font-weight: bold;
+}
+.bookmarkcaption a.f:hover {
+	background-color: transparent;
+}
+.bookmarkcaption div.link {
+	padding: 0;
+}
+.bookmark_href {
+	color: #F4F9FA;
+}
+	.bookmark_href:hover {
+		background-color: #0C85FF;
+		text-decoration: none;
+	}
+#openAll {
+	margin-left: 10px;
+	font-weight: bold;
+}
+	#openAll:hover {
+		color: #940B10;
+		background-color: transparent;
+	}
+span.active {
+	padding: 1px 4px;
+	border: 1px #000 solid;
+	color: #FFF;
+	background-color: #1E1E1E;
+}
+/* Bookmarks section */
+div.bookmarks, div.bookmark {
+	background-color: #666;
+}
+div.bookmark {
+	border-color: #525252;
+}
+div.bookmark:hover {
+	background-color: #333;
+}
+span.private, span.public {
+	padding: 2px 4px;
+}
+span.private {
+	background-color: #6A953C;
+	color: #B2FF51;
+}
+span.public {
+	background-color: #940B10;
+	color: #E33D42;
+}
+/* Footer */
+div#footer {
+	background-color: transparent;
+}
+h2.mnu:hover {
+	color: #666;
+}
+div.set {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 1px solid #525252;
+}
+a.add_bookmark {
+	padding: 2px 4px;
+	color: #FFF;
+	background-color: #0C85FF;
+}
+a.add_bookmark img {
+	color: #FFF;
+	background-color: #0C85FF;
+}
+#googlesearch form {
+	border-color: #000;
+	background-color: #1E1E1E;
+}
+input {
+	color:#000;
+}
+select {
+	color:#000;
+}
