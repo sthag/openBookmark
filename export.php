@@ -124,7 +124,7 @@ if (!isset ($_POST['browser']) || $_POST['browser'] == "" ||
 </div>
 
 <?php
-	print_footer ();
+	//print_footer ();
 	require_once (ABSOLUTE_PATH . "footer.php");
 }
 

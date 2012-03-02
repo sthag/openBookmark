@@ -167,7 +167,8 @@ $order = set_get_order ();
 			<div style="height: <?php echo ($table_height == 0) ? "auto" : $table_height; ?>; overflow:auto;">
 
 				<div class="bookmark">
-					<a class="f" href="./index.php"><img src="./images/folder_open.gif" alt=""> My Bookmarks</a>
+					<!--//<a class="f" href="./index.php"><img src="./images/folder_open.gif" alt=""> My Bookmarks</a>-->
+					<a class="f" href="./index.php"><img src="./images/folder_go.png" alt="" /> <?php echo $settings['root_folder_name']; ?></a>
 				</div>
 
 					<?php
@@ -283,6 +284,6 @@ $order = set_get_order ();
 </div>
 
 <?php
-print_footer ();
+//print_footer ();
 require_once (ABSOLUTE_PATH . "footer.php");
 ?>

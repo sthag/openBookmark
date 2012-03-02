@@ -331,15 +331,19 @@ function check_date_format () {
 				To show the OpenBookmark dialog in a new window, drag this link to the
 				Link Bar.<br>
 
-				<a href="javascript:(function(){bmadd=window.open('<?php echo $js_url; ?>/bookmark_new.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'bmadd','toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes,width=500,height=500,left=50,top=50');setTimeout(function(){bmadd.focus();});})();" title="bookmark">
-				<img src="./images/bookmark.gif" alt="bookmark" title="bookmark">
+				<!--//<a href="javascript:(function(){bmadd=window.open('<?php echo $js_url; ?>/bookmark_new.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'bmadd','toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes,width=500,height=500,left=50,top=50');setTimeout(function(){bmadd.focus();});})();" title="bookmark">-->
+				<a class="add_bookmark" href="javascript:(function(){bmadd=window.open('<?php echo $js_url; ?>/bookmark_new.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'bmadd','toolbar=no,location=no,status=no,scrollbars=yes,resizable=yes,width=500,height=500,left=50,top=50');setTimeout(function(){bmadd.focus();});})();" title="bookmark">
+				<!--//<img src="./images/bookmark.gif" alt="bookmark" title="bookmark">-->
+				<img src="./images/add.png" alt="bookmark" title="bookmark"> bookmark
 				</a><br>
 			</p>
 			<p>
 				To open the OpenBookmark dialog in the same window, drag this link to the
 				Link Bar.<br>
-				<a href="javascript:location.href='<?php echo $js_url; ?>/bookmark_add.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)" title="bookmark">
-				<img src="./images/bookmark.gif" alt="bookmark" title="bookmark">
+				<!--//<a href="javascript:location.href='<?php echo $js_url; ?>/bookmark_add.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)" title="bookmark">-->
+				<a class="add_bookmark" href="javascript:location.href='<?php echo $js_url; ?>/bookmark_add.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)" title="bookmark">
+				<!--//<img src="./images/bookmark.gif" alt="bookmark" title="bookmark">-->
+				<img src="./images/add.png" alt="bookmark" title="bookmark"> bookmark
 				</a><br>
 			</p>
 			<p>

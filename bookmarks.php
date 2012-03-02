@@ -75,24 +75,29 @@ function list_bookmarks ($bookmarks, $show_checkbox, $show_folder, $show_icon, $
 			echo "\t\t\t" . '</span>' . "\n";
 			
 			if ($show_edit) {
-				echo "\t\t\t" . '<img src="./images/edit.gif"   alt="" class="invisible">' . "\n";
+				//echo "\t\t\t" . '<img src="./images/edit.gif"   alt="" class="invisible">' . "\n";
+				echo "\t\t\t" . '<img src="./images/pencil.png"   alt="" class="invisible">' . "\n";
 			}
 			if ($show_move) {
-				echo "\t\t\t" . '<img src="./images/move.gif"   alt="" class="invisible">' . "\n";
+				//echo "\t\t\t" . '<img src="./images/move.gif"   alt="" class="invisible">' . "\n";
+				echo "\t\t\t" . '<img src="./images/cut.png"   alt="" class="invisible">' . "\n";
 			}
 			if ($show_delete) {
-				echo "\t\t\t" . '<img src="./images/delete.gif" alt="" class="invisible">' . "\n";
+				//echo "\t\t\t" . '<img src="./images/delete.gif" alt="" class="invisible">' . "\n";
+				echo "\t\t\t" . '<img src="./images/delete.png" alt="" class="invisible">' . "\n";
 			}
 			echo "\t\t" . '</div>' . "\n";
 		}
 		echo "\t\t" . '<div class="link">' . "\n";
 		if ($show_icon) {
-			echo "\t\t\t" . '<img src="./images/bookmark_image.gif" alt="" class="invisible">' . "\n";
+			//echo "\t\t\t" . '<img src="./images/bookmark_image.gif" alt="" class="invisible">' . "\n";
+			echo "\t\t\t" . '<img src="./images/page_white_link.png" alt="" class="invisible">' . "\n";
 		}
 		$query_data ['order'] = $sort_t;
 		$query_string = assemble_query_string ($query_data);
 		echo "\t\t\t" . '<a href="' . $scriptname . '?' . $query_string . '" class="f blink">Title ' . $img_t . '</a>' . "\n";
-		echo '<a id="openAll" style="font-weight:800;float:right; margin-right: 60px;" href="javascript:openAll();">[Open All]</a>';
+		//echo '<a id="openAll" style="font-weight:800;float:right; margin-right: 60px;" href="javascript:openAll();">[Open All]</a>';
+		echo '<a id="openAll" href="javascript:openAll();">[Open all]</a>';
 		echo "\t\t" . '</div>' . "\n";
 		echo "\t" . '</div>' . "\n\n";
 	}
