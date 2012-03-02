@@ -87,7 +87,7 @@ div.bookmark {
 	background-color: #000;
 }
 div.bookmarkcaption {
-	background: url(images/grad.png) repeat-x;
+	background-color: #BBB;
 }
 div.bookmark:hover {
 	background-color: #333;

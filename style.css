@@ -5,14 +5,14 @@
 	font-size: 10pt;
 }
 body {
-	background-color: white;
 	margin: 0;
 	padding: 5px;
+	background-color: #fff;
 }
 img {
-	border: 0px solid #FFFFFF;
+	margin: 0;
+	border: 0;
 	vertical-align: middle;
-	margin: 0px;
 }
 a:link {
 	text-decoration: none;
@@ -21,78 +21,88 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: underline;
 	color: #AE1A1A;
+	text-decoration: underline;
 }
 a:active {
 	text-decoration: none;
 }
 fieldset {
-	margin: 10px;
 	float: none;
+	margin: 10px;
+}
+hr {
+	height: 1px;
+	border: 0;
+	color: #bbb;
+	background-color: #bbb;
 }
 /* Caption */
 h1#caption {
-	font-size: 15pt;
+	display: none;
 	margin: 0 0 0.5em;
 	padding: 10px;
-	text-align: center;
+	background-color: #bbb;
+	font-size: 15pt;
 	font-family: Georgia, Times, serif;
-	background-color:#bbb;
-	display: none;
+	text-align: center;
 }
 h2.caption {
-	font-weight:bold;
 	margin: 5px;
+	font-weight: bold;
 }
+h2.mnu {
+	cursor: pointer;
+}
+	h2.mnu:hover {
+		color:#eee;
+	}
 
 /* Menu and navigation */
 div#menu {
-	font-size: 9pt;
+	position: fixed;
+	top: 5px;
+	left: 5px;
 	float: left;
-	width: 130px;
-	margin: 0px;
+	width: 135px;
+	margin: 0;
 	padding: 0;
-	margin-bottom: 10px;
+	font-size: 9pt;
 }
 h2.nav {
-	font-size: 10pt;
 	margin: 0;
-	padding: 3px;
-	/* background-color:#bbb; */
-	background:#dadbdb url(images/grad.png) repeat-x;
-	width: 124px;
+	padding: 3px 4px;
+	background-color: #bbb;
 }
 ul.nav {
-	border: 1px solid #bbb;
-	margin: 0px 0px 10px 0px;
+	border-bottom: 1px solid #bbb;
+	margin: 0 0 10px 0;
 	padding: 0;
 }
-ul.nav li {
-	list-style: none;
-	margin: 0;
-	padding: 1px;
-}
-ul.nav a {
-	display: block;
-	padding: 2px;
-	font-size: 9pt;
-}
-ul.nav a:link {
-	text-decoration: none;
-}
-ul.nav a:visited {
-	text-decoration: none;
-}
-ul.nav a:hover {
-	text-decoration: none;
-	/* color: #AE1A1A; */
-	color: #555555;
-	background-color: #ddd;
-}
-ul.nav a:active {
-	text-decoration: none;
-}
+	ul.nav li {
+		list-style: none;
+		margin: 0;
+		padding: 1px 0;
+	}
+	ul.nav a {
+		display: block;
+		padding: 3px 4px;
+		font-size: 9pt;
+	}
+	ul.nav a:link {
+		text-decoration: none;
+	}
+	ul.nav a:visited {
+		text-decoration: none;
+	}
+	ul.nav a:hover {
+		text-decoration: none;
+		color: #555555;
+		background-color: #ddd;
+	}
+	ul.nav a:active {
+		text-decoration: none;
+	}
 form.nav {
 	margin: 0px;
 }
@@ -100,33 +110,23 @@ form.nav {
 /* Folders section */
 div.folders {
 	float: left;
-	overflow: auto;
+	margin-right: 5px;
 	padding-right: 20px;
 	padding-bottom: 5px;
-	margin-right: 5px;
-	border: 1px solid #BBB;
+	border: 1px solid #bbb;
+	overflow: auto;
 }
-a.f:link {
-	text-decoration: none;
-	color: #555555;
-}
-a.f:visited {
-	text-decoration: none;
+a.f {
 	color: #555555;
 }
 a.f:hover {
 	text-decoration: none;
-	color: #555555;
-}
-a.f:active {
-	text-decoration: none;
-	color: #555555;
 }
 span.active {
+	padding: 1px;
+	border: 1px #316AC5 solid;
 	color: #000000;
 	background-color: #C1D2EE;
-	border:1px #316AC5 solid;
-	padding:1px;
 }
 div.foldertop {
 	height: 5px;
@@ -134,22 +134,20 @@ div.foldertop {
 
 /* Bookmarks section */
 div.bookmarks {
-	overflow:auto;
-	padding: 0px;
 	display: block;
-	border-left: 1px solid #bbb;
+	padding: 0;
+	overflow: auto;
 }
 div.bookmark {
 	border-bottom: 1px solid #bbb;
 	padding: 4px;
 }
+	div.bookmark:hover {
+		background-color: #eee;
+	}
 div.bookmarkcaption {
 	padding: 2px 2px 2px 4px;
-	/* background-color: #bbb; */
-	background: url(images/grad.png) repeat-x;
-}
-div.bookmark:hover {
-	background-color: #eee;
+	background-color: #bbb;
 }
 div.bmleft {
 	float: left;
@@ -157,13 +155,15 @@ div.bmleft {
 }
 div.bmright {
 	float: right;
-	margin-left: 10px;
-	padding: 0px;
-	margin: 0px;
+	margin: 0 0 0 10px;
+	padding: 0;
 	text-align: center;
 }
 div.link {
-	padding: 0px 0px 2px;
+	padding: 0 0 2px 0;
+}
+div.description, span.private, span.public, span.date, a.footer {
+	font-size: smaller;
 }
 span.private {
 	background-color: #E7FBE9;
@@ -175,9 +175,6 @@ span.public {
 }
 div.description {
 	margin-top: 5px;
-}
-div.description, span.private, span.public, span.date, a.footer {
-	font-size: smaller;
 }
 .invisible {
 	visibility: hidden;
@@ -192,50 +189,37 @@ div#main {
 	margin-bottom: 10px;
 }
 div#content {
-	overflow:auto;
-	padding: 0px;
 	display: block;
+	padding: 0;
+	overflow: auto;
+}
+div.set {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 1px solid #bbb;
 }
 
 /* Footer */
 div#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
 	clear: both;
 	margin-top: 10px;
 	padding: 2px;
-	font-size: smaller;
-	font-style:italic;
-	position: fixed;
-	bottom:0;
-	left:0;
-	z-index: 999;
 	background-color: #fff;
+	font-size: smaller;
+	font-style: italic;
+	z-index: 999;
 }
-
-/* openbookmark additions */
-div #menu {
-	position: fixed;
-	top: 5px;
-	left: 10px;
-}
-
-h2.mnu {
-	cursor: pointer;
-}
-	h2.mnu:hover {
-		color:#eee;
-	}
-	
 .loading-anim {
 	background-image: url('loading.gif');
-	background-repeat:no-repeat;
-	/*background-attachment:fixed;*/
-	background-position:center; 
+	background-repeat: no-repeat;
+	background-position: center;
 }
-
 .mobile {
-	display:none;
+	display: none;
 }
-
 #googlesearch {
 	position: relative;
 }

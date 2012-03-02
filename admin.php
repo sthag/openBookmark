@@ -72,7 +72,8 @@ $message2 = '';
 	}
 	?>
 	
-				<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">
+				<!--//<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">-->
+				<div class="set">
 					<h2 class="caption">Create User</h2>
 	
 					<form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="POST">
@@ -113,7 +114,8 @@ $message2 = '';
 	
 				</div>
 
-				<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">
+				<!--//<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">-->
+				<div class="set">
 					<h2 class="caption">Delete User</h2>
 
 					<?php
@@ -201,7 +203,8 @@ $message2 = '';
 	
 				</div>
 
-				<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">
+				<!--//<div style="border: 1px solid #bbb; margin: 10px; padding: 10px;">-->
+				<div class="set">
 						<h2 class="caption">Version</h2>
 
 						<table>
@@ -211,7 +214,8 @@ $message2 = '';
 							</tr>
 						
 							<tr>
-								<td><a href="http://www.frech.ch/online-bookmarks/" target="_new">Newest Version available:</a></td>
+								<!--//<td><a href="http://www.frech.ch/online-bookmarks/" target="_new">Newest Version available:</a></td>-->
+								<td>Newest Version available:</td>
 								<td><a href="http://www.frech.ch/online-bookmarks/" target="_new"><?php echo "disabled";//check_version (); ?></a></td>
 							</tr>
 						</table>
