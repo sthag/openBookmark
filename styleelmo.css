@@ -39,7 +39,9 @@ ul.nav a:hover {
 }
 /* Folders section */
 div.folders {
-	border-color: #525252;
+	/*border-color: #525252;*/
+	border-color: #1E1E1E;
+	background-color: #333;
 }
 div.folders div {
 	margin-bottom: 2px;
@@ -48,16 +50,20 @@ div.folders img {
 	padding-bottom: 1px;
 }
 a.f:link {
-	color: #1E1E1E;
+	/*color: #1E1E1E;*/
+	color: #F4F9FA;
 }
 a.f:visited {
-	color: #1E1E1E;
+	/*color: #1E1E1E;*/
+	color: #F4F9FA;
 }
 a.f:hover {
-	color: #000;
+	/*color: #000;*/
+	color: #FFF;
 }
 a.f:active {
-	color: #000;
+	/*color: #000;*/
+	color: #FFF;
 }
 div.bookmarkcaption {
 	background-color: #525252;
@@ -77,6 +83,7 @@ div.bookmarkcaption {
 }
 	.bookmark_href:hover {
 		background-color: #0C85FF;
+		color: #FFF;
 		text-decoration: none;
 	}
 #openAll {
@@ -88,10 +95,10 @@ div.bookmarkcaption {
 		background-color: transparent;
 	}
 span.active {
-	padding: 1px 4px;
-	border: 1px #000 solid;
+	padding: 1px 4px 2px 4px;
+	/*border-color: #000;*/
 	color: #FFF;
-	background-color: #1E1E1E;
+	/*background-color: #1E1E1E;*/
 }
 /* Bookmarks section */
 div.bookmarks, div.bookmark {
@@ -102,6 +109,9 @@ div.bookmark {
 }
 div.bookmark:hover {
 	background-color: #333;
+}
+div.bookmark:hover > div.link a.bookmark_href {
+	color: #666;
 }
 span.private, span.public {
 	padding: 2px 4px;
